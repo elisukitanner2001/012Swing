@@ -14,11 +14,10 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class FirstWindow extends JFrame{
-	
-	
+		
 	public FirstWindow() {
 		super("Eli is Freaking Awesome");
-		setSize(800, 600);
+		setSize(1000, 800);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		
@@ -43,13 +42,14 @@ public class FirstWindow extends JFrame{
 		b1.setBackground(Color.RED);
 		JButton b2 = new JButton("button 2");
 		b2.setBackground(Color.YELLOW);
-		JButton b3 = new JButton("button 3");
-		JButton b4 = new JButton("button 4");
-		JButton b5 = new JButton("button 5");
-		JButton b6 = new JButton("button 6");
-		JButton b7 = new JButton("button 7");
-		JButton b8 = new JButton("button 8");
 		
+		JButton b3 = new JButton("button 3");
+		b3.setBackground(Color.RED);
+		JButton b4 = new JButton("button 4");
+		b4.setBackground(Color.YELLOW);
+		JButton b5 = new JButton("button 5");
+		b5.setBackground(Color.YELLOW);
+
 		JCheckBox cb1 = new JCheckBox ("Do you Like Bacon"); 
 		cb1.setBackground(Color.GRAY);
 		JCheckBox cb2 = new JCheckBox ("Do you Like JAVA?");
@@ -67,6 +67,19 @@ public class FirstWindow extends JFrame{
 		cb7.setBackground(Color.GRAY);
 		JCheckBox cb8 = new JCheckBox ("Death Star?"); 
 		cb8.setBackground(Color.GRAY);
+		
+		JCheckBox cb9 = new JCheckBox ("Phantom Menace?"); 
+		cb9.setBackground(Color.RED);
+		JCheckBox cb10 = new JCheckBox ("Clone Wars"); 
+		cb10.setBackground(Color.GRAY);
+		JCheckBox cb11 = new JCheckBox ("Revenge of the Sith"); 
+		cb11.setBackground(Color.GRAY);
+		JCheckBox cb12 = new JCheckBox ("A New Hope?");
+		cb12.setBackground(Color.GRAY);
+		JCheckBox cb13 = new JCheckBox ("Empire Strikes Back?"); 
+		cb13.setBackground(Color.GRAY);
+		JCheckBox cb14 = new JCheckBox ("Return of the Jedi"); 
+		cb14.setBackground(Color.GRAY);
 
 		JLabel myLabel = new JLabel("Fancy label!");
 		JTextArea myTextArea = new JTextArea("Fancy Text Area!");
@@ -89,15 +102,19 @@ public class FirstWindow extends JFrame{
 		p3.add(myTextArea, gbc);
 		gbc.gridx = 3;
 		gbc.gridy = 0;
+
 		p3.add(myTextField, gbc);
 		gbc.gridx = 0;
 		gbc.gridy = 0;
+		
+		
 		p5.add(cb3, gbc);
 		gbc.gridx = 0;
 		gbc.gridy = 1;
+		
 		p5.add(cb4,gbc);
-		gbc.gridx = 0;
-		gbc.gridy = 2;
+		gbc.gridx = 1;
+		gbc.gridy = 1;
 		p5.add(cb5, gbc);
 		gbc.gridx = 0;
 		gbc.gridy = 3;
@@ -108,8 +125,32 @@ public class FirstWindow extends JFrame{
 		gbc.gridx = 0;
 		gbc.gridy = 1;
 		p4.add(cb8,gbc);
+		
+		gbc.gridx = 1;
+		gbc.gridy = 1;
+		p3.add(cb9, gbc);
+		gbc.gridx = 1;
+		gbc.gridy = 2;
+		p3.add(cb10, gbc);
+		gbc.gridx = 2;
+		gbc.gridy = 1;
+		p3.add(cb11, gbc);
+		gbc.gridx = 2;
+		gbc.gridy = 2;
+		p3.add(cb12, gbc);
+		gbc.gridx = 3;
+		gbc.gridy = 1;
+		p3.add(cb13, gbc);
+		gbc.gridx = 3;
+		gbc.gridy = 2;
+		p3.add(cb14, gbc);
+		gbc.gridx = 1;
+		gbc.gridy = 0;
+		p5.add(b3);
 		gbc.gridx = 0;
 		gbc.gridy = 2;
+		p2.add(b5);
+
 
 		
 		
